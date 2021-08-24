@@ -29,5 +29,6 @@
 --
 
 require('general')
+require('plugins')
 require('style')
 

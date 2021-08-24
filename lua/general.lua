@@ -31,10 +31,8 @@ vim.o.showmatch = true
 -- line height
 vim.o.linespace = 2
 
--- load auto indent plugin
-require('paq') { 'ciaranm/detectindent' }
-
 -- default indent level
+vim.bo.tabstop = 4
 vim.g.detectindent_preferred_indent = 4
 
 -- use detectindent on every file
