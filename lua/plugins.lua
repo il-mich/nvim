@@ -5,9 +5,23 @@ if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
 end
 
 require('paq') {
-	-- auto indent plugin
-	'ciaranm/detectindent';
-
 	-- lightline
 	'itchyny/lightline.vim';
+
+	-- colorscheme
+	'haishanh/night-owl.vim';
+
+	-- line numbers
+	'jeffkreeftmeijer/vim-numbertoggle';
+
+	-- code autoformatting
+	'Chiel92/vim-autoformat';
+
+	-- LSP
+	'neovim/nvim-lspconfig';
+
+	-- autocompletion
+	{'ms-jpq/coq_nvim', branch='coq'};
+	{'ms-jpq/coq.artifacts', branch='artifacts'};
 }
+

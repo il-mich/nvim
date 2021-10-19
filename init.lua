@@ -31,4 +31,5 @@
 require('general')
 require('plugins')
 require('style')
+require('completion')
 

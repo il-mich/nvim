@@ -11,10 +11,19 @@ vim.api.nvim_set_keymap('n', '<esc><esc>', ':silent! nohls<cr>', {noremap = true
 vim.o.mouse = 'a'
 
 -- copy to clipboard
-vim.o.clipboard = 'unnamedplus'
+vim.cmd('set clipboard+=unnamedplus')
 
--- show line numbers
+-- tabs are four columns wide
+vim.bo.tabstop = 4
+vim.bo.softtabstop = 4
+vim.bo.shiftwidth = 4
+
+-- use tabs for indentation
+vim.bo.expandtab = false
+
+-- show hybrid line numbers
 vim.o.number = true
+vim.o.relativenumber = true
 
 -- wrap lines
 vim.o.wrap = true
@@ -30,13 +39,6 @@ vim.o.showmatch = true
 
 -- line height
 vim.o.linespace = 2
-
--- default indent level
-vim.bo.tabstop = 4
-vim.g.detectindent_preferred_indent = 4
-
--- use detectindent on every file
-vim.api.nvim_command('autocmd BufNewFile,BufRead,VimEnter * :DetectIndent')
 
 -- return to last edited position when opening a file
 vim.api.nvim_command('autocmd BufReadPost * silent! normal! g`"zv')
