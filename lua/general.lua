@@ -3,6 +3,7 @@ vim.o.undolevels = 1000
 
 -- case-insensitive search
 vim.o.ignorecase = true
+vim.o.smartcase = true
 
 -- remove search result highlight with <esc><esc>
 vim.api.nvim_set_keymap('n', '<esc><esc>', ':silent! nohls<cr>', {noremap = true})
@@ -39,6 +40,12 @@ vim.o.showmatch = true
 
 -- line height
 vim.o.linespace = 2
+
+-- enable auto pairs
+require('mini.pairs').setup()
+
+-- python executable
+vim.g.python3_host_prog = '/usr/bin/python'
 
 -- return to last edited position when opening a file
 vim.api.nvim_command('autocmd BufReadPost * silent! normal! g`"zv')

@@ -17,6 +17,9 @@ require('paq') {
 	-- code autoformatting
 	'Chiel92/vim-autoformat';
 
+	-- auto pairs
+	'echasnovski/mini.nvim';
+
 	-- LSP
 	'neovim/nvim-lspconfig';
 
