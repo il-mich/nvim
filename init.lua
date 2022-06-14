@@ -1,4 +1,4 @@
---- il-mich Neovim config for nvim
+-- le-mich config for Neovim
 --
 --
 --                `........`
