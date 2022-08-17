@@ -45,13 +45,13 @@ require('packer').startup(function(use)
 	}
 
 	-- zen mode
-	use {'folke/zen-mode.nvim', opt = true}
+	use {'folke/zen-mode.nvim'}
 
 	-- better terminal
 	use 'vimlab/split-term.vim'
 
-	-- code autoformatting
-	use {'Chiel92/vim-autoformat', opt = true}
+	-- pick up indentation from file
+	use 'nmac427/guess-indent.nvim'
 
 	-- mini plugins
 	use 'echasnovski/mini.nvim'

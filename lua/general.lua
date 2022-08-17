@@ -29,6 +29,9 @@ vim.bo.shiftwidth = 4
 -- use tabs for indentation
 vim.bo.expandtab = false
 
+-- indentation guesser
+require('guess-indent').setup()
+
 -- undo sessions
 vim.bo.undofile = true
 
