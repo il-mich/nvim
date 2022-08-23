@@ -57,14 +57,14 @@ require('packer').startup(function(use)
 	use 'echasnovski/mini.nvim'
 
 	-- LSP
-	use {'neovim/nvim-lspconfig', opt = true}
+	use {'neovim/nvim-lspconfig'}
 
 	-- autocompletion
 	use {
 		'ms-jpq/coq_nvim', branch='coq',
-		run = ':COQdeps', opt = true,
+		run = ':COQdeps',
 		requires = {
-			{'ms-jpq/coq.artifacts', branch='artifacts', opt = true}
+			{'ms-jpq/coq.artifacts', branch='artifacts'}
 		}
 	}
 
