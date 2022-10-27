@@ -15,6 +15,9 @@ vim.o.cpoptions = vim.o.cpoptions .. 'n'
 -- break lines at word
 vim.o.linebreak = true
 
+-- remove tilde in EndOfBuffer
+vim.cmd('highlight EndOfBuffer ctermfg=black guifg=bg')
+
 -- highlight matching brace
 vim.o.showmatch = true
 
