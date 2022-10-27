@@ -14,6 +14,10 @@ vim.api.nvim_set_keymap('n', '<esc><esc>', ':silent! nohls<CR>', {noremap = true
 -- enable mouse interactions
 vim.o.mouse = 'a'
 
+-- change split behaviour
+vim.o.splitbelow = true
+vim.o.splitright = true
+
 -- copy to clipboard
 vim.o.clipboard = vim.o.clipboard .. 'unnamedplus'
 
