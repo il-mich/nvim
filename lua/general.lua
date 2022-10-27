@@ -3,6 +3,7 @@ vim.o.undolevels = 1000
 
 -- case-insensitive search
 vim.o.ignorecase = true
+vim.o.smartcase = true
 
 -- remove search result highlight with <esc><esc>
 vim.api.nvim_set_keymap('n', '<esc><esc>', ':silent! nohls<cr>', {noremap = true})
