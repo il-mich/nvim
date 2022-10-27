@@ -1,6 +1,10 @@
--- show line numbers
-vim.o.number = true
-vim.o.relativenumber = true
+-- show hybrid line numbers
+vim.wo.number = true
+vim.wo.relativenumber = true
+
+-- remove numbers in terminal
+vim.cmd('autocmd TermOpen * set nonumber')
+vim.cmd('autocmd TermOpen * set norelativenumber')
 
 -- wrap lines
 vim.o.wrap = true
