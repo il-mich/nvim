@@ -24,3 +24,9 @@ vim.o.clipboard = vim.o.clipboard .. 'unnamedplus'
 -- return to last edited position when opening a file
 vim.api.nvim_command('autocmd BufReadPost * silent! normal! g`"zv')
 
+-- use zsh as shell
+vim.o.shell = 'zsh'
+
+-- python executable
+vim.g.python3_host_prog = '/usr/bin/python'
+
