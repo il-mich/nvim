@@ -12,7 +12,7 @@ vim.api.nvim_set_keymap('n', '<esc><esc>', ':silent! nohls<CR>', {noremap = true
 vim.o.mouse = 'a'
 
 -- copy to clipboard
-vim.o.clipboard = 'unnamedplus'
+vim.o.clipboard = vim.o.clipboard .. 'unnamedplus'
 
 -- show line numbers
 vim.o.number = true
