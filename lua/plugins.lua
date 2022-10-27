@@ -8,6 +8,9 @@ require('packer').startup(function(use)
 	-- packer itself
 	use 'wbthomason/packer.nvim'
 
+	-- mini plugins
+	use 'echasnovski/mini.nvim'
+
 	-- automatically setup configuration after bootstrapping packer
 	if packer_bootstrap then
 		require('packer').sync()
