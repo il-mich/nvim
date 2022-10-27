@@ -28,6 +28,7 @@
 --                       .``.`.`.`.``
 --
 
+require('plugins')
 require('general')
 require('style')
 
