@@ -30,5 +30,6 @@
 
 require('plugins')
 require('general')
+require('movement')
 require('style')
 
