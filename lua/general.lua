@@ -1,6 +1,9 @@
 -- number of undo levels
 vim.o.undolevels = 1000
 
+-- undo sessions
+vim.bo.undofile = true
+
 -- case-insensitive search
 vim.o.ignorecase = true
 vim.o.smartcase = true
