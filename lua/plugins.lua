@@ -45,7 +45,7 @@ require('packer').startup(function(use)
 	}
 
 	-- zen mode
-	use {'folke/zen-mode.nvim'}
+	use 'folke/zen-mode.nvim'
 
 	-- better terminal
 	use 'vimlab/split-term.vim'
@@ -55,6 +55,9 @@ require('packer').startup(function(use)
 
 	-- mini plugins
 	use 'echasnovski/mini.nvim'
+
+	-- discord rich presence
+	use 'andweeb/presence.nvim'
 
 	-- LSP
 	use {'neovim/nvim-lspconfig'}
