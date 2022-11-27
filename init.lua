@@ -32,4 +32,5 @@ require('plugins')
 require('general')
 require('movement')
 require('style')
+require('completion')
 

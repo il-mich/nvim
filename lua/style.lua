@@ -27,3 +27,6 @@ vim.o.linespace = 2
 -- remove default bar
 vim.o.showmode = false
 
+-- statusline
+require('mini.statusline').setup()
+

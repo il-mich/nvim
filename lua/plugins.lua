@@ -11,6 +11,12 @@ require('packer').startup(function(use)
 	-- mini plugins
 	use 'echasnovski/mini.nvim'
 
+	-- better terminal
+	use 'vimlab/split-term.vim'
+
+	-- discord rich presence
+	use 'andweeb/presence.nvim'
+
 	-- automatically setup configuration after bootstrapping packer
 	if packer_bootstrap then
 		require('packer').sync()

@@ -30,3 +30,21 @@ vim.o.shell = 'zsh'
 -- python executable
 vim.g.python3_host_prog = '/usr/bin/python'
 
+-- autopairs
+require('mini.pairs').setup()
+
+-- surround
+require('mini.surround').setup()
+
+-- autocommenter
+require('mini.comment').setup()
+
+-- sessions
+require('mini.sessions').setup()
+
+-- startup page
+require('mini.starter').setup()
+
+-- trailspace
+require('mini.trailspace').setup()
+

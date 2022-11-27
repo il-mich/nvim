@@ -26,3 +26,12 @@ map('t', '<C-e>', '<C-\\><C-N>', opts)
 -- enhanced i/a commands
 require('mini.ai').setup()
 
+-- enhanced buffer removal
+require('mini.bufremove').setup()
+
+-- jump to character
+require('mini.jump').setup()
+
+-- move cursor to point
+require('mini.jump2d').setup()
+
